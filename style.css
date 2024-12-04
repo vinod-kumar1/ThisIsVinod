@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    background: #444;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form textarea, form button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+  }
+  
+  a{
+    text-decoration: none;
+    color : black !important;
+  }
+
+  a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #github{
+    margin  :0px;
+    padding : 0px 2rem;
+    position: relative;
+}
+
+#github img{
+    position: relative;
+    transform: translateY(8px);
+    cursor: pointer;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+  }
+
+  .hover-underline img {
+    display: block;
+  }
+
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+  }
