@@ -114,12 +114,31 @@ body {
     text-decoration: none;
     z-index: 2;
     position: absolute;
-    right: 5px;
-    top : 10px;
+    right: 35px;
+    top : 30px;
 background-color: transparent;
 
   }
 
   #resume span:hover{
     text-decoration: underline;
+  }
+
+  #resume{
+animation: rotates 1s 1;
+  }
+
+  @keyframes rotates {
+    0%{
+      transform: rotate(90deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+  75%{
+      transform: rotate(270deg);
+    }
+    100%{
+      transform: rotate(3600deg);
+    }
   }
