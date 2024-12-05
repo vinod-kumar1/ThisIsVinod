@@ -109,3 +109,17 @@ body {
   .hover-underline:hover::after {
     transform: scaleX(1);
   }
+
+  #resume{
+    text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    right: 5px;
+    top : 10px;
+background-color: transparent;
+
+  }
+
+  #resume span:hover{
+    text-decoration: underline;
+  }
