@@ -17,7 +17,7 @@ async function formSubmit(event) {
     "https://api.github.com/users/vinod-kumar1/repos",
     {
       headers: {
-        Authorization: "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",
+        Authorization: "",
       },
     }
   );
