@@ -17,7 +17,7 @@ async function formSubmit(event) {
     "https://api.github.com/users/vinod-kumar1/repos",
     {
       headers: {
-        Authorization: process.env.Authorization,
+        Authorization: ${{vars.Authorization}},
       },
     }
   );
