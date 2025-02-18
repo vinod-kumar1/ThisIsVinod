@@ -1,144 +1,176 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    background: #444;
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    background: #f9f9f9;
-  }
-  
-  form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form input, form textarea, form button {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-  }
-  
-  a{
-    text-decoration: none;
-    color : black !important;
-  }
-
-  a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  #github{
-    margin  :0px;
-    padding : 0px 2rem;
-    position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-#github img{
-    position: relative;
-    transform: translateY(8px);
-    cursor: pointer;
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  background: #444;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.project-description {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#github {
+  margin: 0px;
+  padding: 0px 2rem;
+  position: relative;
+}
+
+#github img {
+  position: relative;
+  transform: translateY(8px);
+  cursor: pointer;
 }
 
 .hover-underline {
-    display: inline-block;
-    position: relative;
-  }
+  display: inline-block;
+  position: relative;
+}
 
-  .hover-underline img {
-    display: block;
-  }
+.hover-underline img {
+  display: block;
+}
 
-  .hover-underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 2px;
-    background-color: black;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
 
-  .hover-underline:hover::after {
-    transform: scaleX(1);
-  }
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+#resume {
+  text-decoration: none;
+  z-index: 2;
+  position: absolute;
+  right: 35px;
+  top: 30px;
+  background-color: transparent;
+}
 
-  #resume{
-    text-decoration: none;
-    z-index: 2;
-    position: absolute;
-    right: 35px;
-    top : 30px;
-background-color: transparent;
+#resume span:hover {
+  text-decoration: underline;
+}
 
-  }
+#resume {
+  animation: rotates 1s 1;
+}
 
-  #resume span:hover{
-    text-decoration: underline;
+@keyframes rotates {
+  0% {
+    transform: rotate(90deg);
   }
-
-  #resume{
-animation: rotates 1s 1;
+  50% {
+    transform: rotate(180deg);
   }
-
-  @keyframes rotates {
-    0%{
-      transform: rotate(90deg);
-    }
-    50%{
-      transform: rotate(180deg);
-    }
-  75%{
-      transform: rotate(270deg);
-    }
-    100%{
-      transform: rotate(3600deg);
-    }
+  75% {
+    transform: rotate(270deg);
   }
+  100% {
+    transform: rotate(3600deg);
+  }
+}

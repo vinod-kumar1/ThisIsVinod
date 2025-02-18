@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="icon" href="./1728553057640.jpeg">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a id="resume" target="_blank" href="./My-Resume.pdf" download="Vinod-resume"><span style="color: white;">Pdf</span><svg xmlns="http://www.w3.org/2000/svg" style="position: relative;left : 2px;top : 2px;" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M14 2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"></path>
-  <path d="M10 12l4-4-4-4"></path>
-</svg>
-</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="./1728553057640.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <header>
-    <h1>Hi, I'm Vinod</h1>
-    <p>Aspiring Frontend Engineer 🚀</p>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<section id="about">
-    <h2>Hey There 👋</h2>
-    <p>I’m a Customer Support Engineer at Contentstack with a passion for web development. Aspiring to become a frontend developer, I’m focused on building intuitive and engaging user interfaces that elevate user experiences.
-    </p>
-</section>
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-        <h3><a target="_blank" href="https://github.com/vinod-kumar1/color-picker-by-image">CSS Color HEX-val picker</a></h3>
-        <p>A simple responsive website that can generate the CSS hex value as you hover over the Canvas you created.</p>
-    </div>
-    <div class="project-card">
-        <h3><a href="https://github.com/vinod-kumar1/Mongo-Short_url_client" target="_blank">Project 2: URL-Shorner</a></h3>
-        <p>Built a small custom url shortner with mongodb as store. It currently generates unique urls but not short ones yet. Working on it... </p>
-        <p><a target="_blank" href="https://github.com/vinod-kumar1/Mongo_shorturl_server/tree/main"><i>Here is the server code</i></a></p>
-    </div>
-</section>
-<section style="padding: 0px 2rem;"><p>More projects on my Github repo</p></section>
-<section id="github">
-    More about me : <a href="https://github.com/vinod-kumar1" target="_blank" class="hover-underline" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-    
-    " width="30px" alt=""></a>
-<a href="https://www.linkedin.com/in/vinod-kumar-62a52622a/" target="_blank" class="hover-underline">
-    <img src="https://imgs.search.brave.com/8ozz5oPc5uWxqzKqGVUWPXCvXcUHEPhcL4KhHKxsk2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzQ2Lzc4LzIz/LzM2MF9GXzU0Njc4/MjM5OF8yNlYzcEw4/NGRKWUw3b3ZnSUlJ/amNESjdJaFBVRHhT/QS5qcGc" alt="LinkedIn Logo" width="30px">
+  <body>
+    <a
+      id="resume"
+      target="_blank"
+      href="./My-Resume.pdf"
+      download="Vinod-resume"
+      ><span style="color: white">Pdf</span
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        style="position: relative; left: 2px; top: 2px"
+        width="1rem"
+        height="1rem"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M14 2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"
+        ></path>
+        <path d="M10 12l4-4-4-4"></path>
+      </svg>
+    </a>
 
-</a> 
-<a href="https://x.com/Vinod57708879" target="_blank" class="hover-underline">
-    <img src="https://imgs.search.brave.com/aIWbdu_epPMN3EKkPWLkrBwEaYdx9LEPsu2Fscc4JxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vYnVz/aW5lc3N0b2RheS9p/bWFnZXMvc3Rvcnkv/MjAyMzA3L3hfdHdp/dHRlci1zaXh0ZWVu/X25pbmUuanBnP3Np/emU9OTQ4OjUzMw" alt="LinkedIn Logo" width="30px" height="30px" style="border-radius: 5px;">
+    <header>
+      <h1>Hi, I'm Vinod</h1>
+      <p>Aspiring Frontend Engineer 🚀</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-</a> 
-</section>
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form" onsubmit="formSubmit(event)">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input name="email" type="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message"  required></textarea>
-      <button type="submit" >Send</button>
-    </form>
-  </section>
-  <footer>
-    <p><a onclick="window.scrollTo(0,0)">Back to top</a></p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    <section id="about">
+      <h2>Hey There 👋</h2>
+      <p>
+        I’m a Customer Support Engineer at Contentstack with a passion for web
+        development. Aspiring to become a frontend developer, I’m focused on
+        building intuitive and engaging user interfaces that elevate user
+        experiences.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-container"></div>
+    </section>
+
+    <section style="padding: 0px 2rem">
+      <p>More projects on my Github repo</p>
+    </section>
+
+    <section id="github">
+      More about me :
+      <a
+        href="https://github.com/vinod-kumar1"
+        target="_blank"
+        class="hover-underline"
+        target="_blank"
+        ><img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          width="30px"
+          alt=""
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/vinod-kumar-62a52622a/"
+        target="_blank"
+        class="hover-underline"
+      >
+        <img
+          src="https://imgs.search.brave.com/8ozz5oPc5uWxqzKqGVUWPXCvXcUHEPhcL4KhHKxsk2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzQ2Lzc4LzIz/LzM2MF9GXzU0Njc4/MjM5OF8yNlYzcEw4/NGRKWUw3b3ZnSUlJ/amNESjdJaFBVRHhT/QS5qcGc"
+          alt="LinkedIn Logo"
+          width="30px"
+        />
+      </a>
+      <a
+        href="https://x.com/Vinod57708879"
+        target="_blank"
+        class="hover-underline"
+      >
+        <img
+          src="https://imgs.search.brave.com/aIWbdu_epPMN3EKkPWLkrBwEaYdx9LEPsu2Fscc4JxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vYnVz/aW5lc3N0b2RheS9p/bWFnZXMvc3Rvcnkv/MjAyMzA3L3hfdHdp/dHRlci1zaXh0ZWVu/X25pbmUuanBnP3Np/emU9OTQ4OjUzMw"
+          alt="LinkedIn Logo"
+          width="30px"
+          height="30px"
+          style="border-radius: 5px"
+        />
+      </a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" onsubmit="formSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input name="email" type="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p><a onclick="window.scrollTo(0,0)">Back to top</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
