@@ -106,8 +106,8 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <form id="contact-form" onsubmit="formSubmit(event)">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input name="email" type="email" placeholder="Your Email" required />
+        <input type="text" name="name" placeholder="Your Name" autocomplete="off" required />
+        <input name="email" type="email" placeholder="Your Email" required autocomplete="off" />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
