@@ -66,7 +66,7 @@ async function formSubmit(event) {
     projectLink.target = "_blank";
     projectLink.rel = "noopener noreferrer";
     projectLink.classList.add("project-link");
-    projectLink.innerText = "Project Website";
+    projectLink.innerText = "Site ↗";
 
     // Add the links to the project links div
     projectLinks.appendChild(githubLink);
